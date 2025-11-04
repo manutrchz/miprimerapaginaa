@@ -1,0 +1,228 @@
+:root {
+  --color-piel: rgb(142, 88, 58);
+  --color-cabello: rgb(60, 35, 20);
+  --color-ojo: rgb(0, 0, 0);
+  --color-boca: rgb(200, 40, 60);
+  --color-vestido: rgb(200, 0, 0);
+  --color-pliegue: rgb(150, 0, 0);
+  --color-arete: rgb(190, 150, 255);
+}
+
+body {
+  background-color: #f5e3c4;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+#lienzo {
+  width: 600px;
+  height: 600px;
+  margin: 40px;
+  background-color: #a0c8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 3px solid #a0c8ff;
+  border-radius: 10px;
+}
+
+/* ----- Vestido ----- */
+#vestido {
+  border-radius: 30%;
+  width: 60%;
+  height: 30%;
+  background-color: var(--color-vestido);
+  position: absolute;
+  left: 20%;
+  top: 70%;
+}
+
+.pliegue {
+  border-radius: 50%;
+  width: 40%;
+  height: 40%;
+  position: absolute;
+}
+
+#pliegue1 {
+  left: 10%;
+  background-color: var(--color-pliegue);
+}
+
+#pliegue2 {
+  left: 30%;
+  background-color: var(--color-vestido);
+}
+
+#pliegue3 {
+  left: 50%;
+  background-color: var(--color-pliegue);
+}
+
+#pliegue4 {
+  left: 70%;
+  background-color: var(--color-vestido);
+}
+
+.boton {
+  border-radius: 50%;
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  background-color: #ffd4d4;
+  border: 2px solid white;
+}
+
+#boton1 {
+  left: 45%;
+  top: 40%;
+}
+
+#boton2 {
+  left: 45%;
+  top: 65%;
+}
+
+/* ----- Cara ----- */
+#cara {
+  border-radius: 50%;
+  width: 45%;
+  height: 45%;
+  background-color: var(--color-piel);
+  position: relative;
+}
+
+/* ----- Cabello largo ----- */
+.cabello {
+  position: absolute;
+  background-color: var(--color-cabello);
+  border-radius: 50%;
+}
+
+#cabello1 {
+  width: 150%;
+  height: 80%;
+  left: -25%;
+  top: -20%;
+  border-radius: 50% 50% 40% 40%;
+}
+
+#cabello2 {
+  width: 40%;
+  height: 60%;
+  left: -35%;
+  top: 20%;
+}
+
+#cabello3 {
+  width: 40%;
+  height: 60%;
+  right: -35%;
+  top: 20%;
+}
+
+#cabello4 {
+  width: 100%;
+  height: 30%;
+  top: -30%;
+}
+
+/* ----- Cejas ----- */
+.cejas {
+  width: 25%;
+  height: 5%;
+  background-color: var(--color-cabello);
+  position: absolute;
+  border-radius: 50%;
+}
+
+#ceja1 {
+  left: 60%;
+  top: 35%;
+  transform: rotate(10deg);
+}
+
+#ceja2 {
+  left: 15%;
+  top: 35%;
+  transform: rotate(-10deg);
+}
+
+/* ----- Ojos ----- */
+.ojo {
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+  background-color: var(--color-ojo);
+  position: absolute;
+}
+
+#ojo1 {
+  left: 65%;
+  top: 45%;
+}
+
+#ojo2 {
+  left: 25%;
+  top: 45%;
+}
+
+/* ----- Nariz y Boca ----- */
+#nariz {
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+  background-color: var(--color-piel);
+  position: absolute;
+  left: 45%;
+  top: 55%;
+  border: 3px solid var(--color-cabello);
+}
+
+#boca {
+  width: 30%;
+  height: 10%;
+  border-radius: 50%;
+  background-color: var(--color-boca);
+  position: absolute;
+  left: 35%;
+  top: 70%;
+}
+
+#tapaboca {
+  width: 30%;
+  height: 5%;
+  border-radius: 50%;
+  background-color: var(--color-piel);
+  position: absolute;
+  left: 35%;
+  top: 70%;
+}
+
+/* ----- Aretes de flor lila ----- */
+.arete {
+  position: absolute;
+  width: 15%;
+  height: 15%;
+  background-color: var(--color-arete);
+  border-radius: 50%;
+  box-shadow: 5px 0 var(--color-arete),
+              -5px 0 var(--color-arete),
+              0 5px var(--color-arete),
+              0 -5px var(--color-arete);
+}
+
+#arete1 {
+  left: -5%;
+  top: 60%;
+}
+
+#arete2 {
+  right: -5%;
+  top: 60%;
+}
